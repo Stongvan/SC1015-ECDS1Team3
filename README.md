@@ -49,7 +49,12 @@ To achieve this we did the following:
 For further findings and explanations, please refer to the Jupyter Notebook on EDA.
 
 ### 4. [Machine Learning Techniques](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
-Here, we then used a wide variety of machine learning models, including multivariate linear regression, random forest regressor and K-nearest neighbour. We compared different models in order to find the one most suited to model the data. The metrics that we used to compared the model was r^2 and mean squared error.
+Here, we then used a wide variety of machine learning models, including 
+1. Multivariate linear regression
+2. Random forest regressor
+3. K-nearest neighbour.
+
+We compared different models in order to find the one most suited to model the data. The metrics that we used to compared the model was r^2 and mean squared error.
 
 We also created a function that takes in user input to predict resale prices. Users have to key in postal code, which will be converted to latitude and longitude, floor area sqm, remaining lease, storey, year, month and room type. The model is able to predict resale prices in the future as well due to the inclusion of year and month. 
 
