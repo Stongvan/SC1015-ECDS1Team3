@@ -59,16 +59,16 @@ To achieve this we did the following:
 
 We then decided to use the following variables for our ML:
 
-floor_area_sqm: Size of the property in square meters.
-remaininglease: Remaining lease duration of the property.
-latitude: North-south position of the property on Earth.
-longitude: East-west position of the property on Earth.
-storey_midpoint: Midpoint of the property's storeys in a building.
-numerical_month: Number of months from base period (January 2017)
-Distance_from_Centre (km): Distance of the property from the city center.
-distance_to_nearest_mrt: Distance to the nearest Mass Rapid Transit (MRT) station.
-distance_to_nearest_mall: Distance to the nearest shopping mall.
-numeric_room_type: Type of rooms in the property represented numerically.
+   `floor_area_sqm`: Size of the property in square meters.\
+   `remaininglease`: Remaining lease duration of the property.\
+   `latitude`: North-south position of the property on Earth.\
+   `longitude`: East-west position of the property on Earth.\
+   `storey_midpoint`: Midpoint of the property's storeys in a building.\
+   `numerical_month`: Number of months from base period (January 2017), in order to capture the effects of time\
+   `Distance_from_Centre (km)`: Distance of the property from the city center.\
+   `distance_to_nearest_mrt`: Distance to the nearest Mass Rapid Transit (MRT) station.\
+   `distance_to_nearest_mall`: Distance to the nearest shopping mall.\
+   `numeric_room_type`: Type of rooms in the property represented numerically.
 
 For further findings and explanations, please refer to the Jupyter Notebook on EDA.
 
@@ -77,34 +77,36 @@ Here, we then used a wide variety of machine learning models, including
 1. **Multivariate linear regression**\
 Multivariate linear regression aims to model the relationship between multiple independent variables (features) and a dependent variable (resale price) by fitting a linear equation to observed data.
 
-Predicted Price ≈ 5,900,000 \
-  Plus
-+ 4300 * Floor Area (sqm)
-+ 4200 * Remaining Lease
-+ 5200 * Floor Number
-+ 14000 * Room Type (numeric)
-+ 2300 * Months from Base Period (Jan 2017)\
-  Minus
-- 460000 * Latitude 
-- 53000 * Longitude 
-- 16000 * Distance from Centre (km) 
-- 15 * Distance to Nearest MRT (m)
-- 9.7 * Distance to Nearest Mall (m) 
+   Predicted Price ≈ 5,900,000
+   
+   Plus
+   + 4300 * Floor Area (sqm)
+   + 4200 * Remaining Lease
+   + 5200 * Floor Number
+   + 14000 * Room Type (numeric)
+   + 2300 * Months from Base Period (Jan 2017)
+     
+   Minus
+   - 460000 * Latitude 
+   - 53000 * Longitude 
+   - 16000 * Distance from Centre (km) 
+   - 15 * Distance to Nearest MRT (m)
+   - 9.7 * Distance to Nearest Mall (m) 
 
 2. **Random forest regressor**\
 Random Forest grows multiple decision trees which are merged together for a more accurate prediction. It uses averaging to improve the predictive accuracy and control over-fitting.
 
-Top 5 Feature Importances:
-distance_from_centre_km: 22.94%
-floor_area_sqm: 41.97%
-numerical_month: 11.82%
-remaininglease: 9.54%
-numeric_room_type: 3.73%
+   Top 5 Feature Importances:
+   distance_from_centre_km: 22.94%
+   floor_area_sqm: 41.97%
+   numerical_month: 11.82%
+   remaininglease: 9.54%
+   numeric_room_type: 3.73%
 
-4. **K-nearest neighbour**\
+3. **K-nearest neighbour**\
 KNN is an instance-based learning algorithm that is used for regression tasks — predicting a continuous-valued attribute associated with an object. The model then matches it to the nearest flats that we have in our data set and try to predict the resale price for the new flat.
 
-Our model found 3 as the best n_neighbours 
+   Our model found 3 as the best n_neighbours 
 
 We compared different models in order to find the one most suited to model the data. The metrics that we used to compared the model was r^2 and mean squared error. In our results, the random forest model actually resulted in the highest r^2 and lowest mean squared error. We thus decided to use this to model our function below.
 
