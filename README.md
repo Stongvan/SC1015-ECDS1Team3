@@ -1,6 +1,7 @@
 # SC1015 Mini Project - HDB Resale Prices
 Lab group: ECDS1\
-Team 3
+Team 3\
+Apr 2024
 
 Members:
 Ryan Tang Shi Jie\
@@ -44,7 +45,7 @@ We performed the following:
 4. **Creating new features:** created new variables such as `storey_midpoint`, `numeric_month`, `Distance_from_Centre (km)`, `distance_to_nearest_mrt` and `distance_to_nearest_mall` using a csv of the coordinates of every mrt and mall in Singapore. We used spatial indexing to query the nearest MRT and mall in the K dimmensional tree, and add in the distances to the nearest amenity into the dataframe to see if this will affect resale prices.
 
 ### 3. [Exploratory Data Analysis](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
-Then, we explored our DataFrames further using Exploratory Data Analysis to answer questions like are there any patterns we are noticing? What do our variables look like?bAre there any underlying relationships between them? Can we make any inferences for our question at this stage? 
+Then, we explored our DataFrames further using Exploratory Data Analysis to answer questions like are there any patterns we are noticing? What do our variables look like? Are there any underlying relationships between them? Can we make any inferences for our question at this stage? 
 
 To achieve this we did the following:
 1. **Explored numeric variables**:
