@@ -37,7 +37,7 @@ We performed the following:
 1. **Convert variables to workable format:** converted variables such as `month` and `remaining_lease` to more workable formats
 2. **Add coordinate data for addresses**: matched addresses with coordinate data
 3. **Dropping NaNs, outliers and irrelevant columns**: All the `NaN` values and irrelevant columns were dropped, outliers were kept
-4. **Creating new features:** created new variables such as `storey_midpoint`, `numeric_month`, `Distance_from_Centre (km)`, `distance_to_nearest_mrt` and `distance_to_nearest_mall` using a csv of the coordinates of every mrt and mall in Singapore.
+4. **Creating new features:** created new variables such as `storey_midpoint`, `numeric_month`, `Distance_from_Centre (km)`, `distance_to_nearest_mrt` and `distance_to_nearest_mall` using a csv of the coordinates of every mrt and mall in Singapore. We used spatial indexing to query the nearest MRT and mall in the k dimmensional tree, and add in the distances to the nearest amenity into the dataframe to see if this will affect resale prices.
 
 ### 3. [Exploratory Data Analysis](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
 Then, we explored our DataFrames further using Exploratory Data Analysis to answer questions like are there any patterns we are noticing? What do our variables look like?bAre there any underlying relationships between them? Can we make any inferences for our question at this stage? 
@@ -50,18 +50,18 @@ For further findings and explanations, please refer to the Jupyter Notebook on E
 
 ### 4. [Machine Learning Techniques](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
 Here, we then used a wide variety of machine learning models, including 
-1. **Multivariate linear regression**
+1. **Multivariate linear regression**\
 Multivariate linear regression aims to model the relationship between multiple independent variables (features) and a dependent variable (resale price) by fitting a linear equation to observed data.
 
-2. **Random forest regressor**
+2. **Random forest regressor**\
 Random Forest grows multiple decision trees which are merged together for a more accurate prediction. It uses averaging to improve the predictive accuracy and control over-fitting.
 
-3. **K-nearest neighbour**
+3. **K-nearest neighbour**\
 KNN is an instance-based learning algorithm that is used for regression tasks — predicting a continuous-valued attribute associated with an object. For this case, our model predicts the house resale price based on the input provided by the user. 
 
 We compared different models in order to find the one most suited to model the data. The metrics that we used to compared the model was r^2 and mean squared error. In our results, the random forest model actually resulted in the highest r^2 and lowest mean squared error. We thus decided to use this to model our function below.
 
-We also created a function that takes in user input to predict resale prices. Users have to key in postal code, which will be converted to latitude and longitude, floor area sqm, remaining lease, storey, year, month and room type. The model is able to predict resale prices in the future as well due to the inclusion of year and month. 
+We also created a function that takes in user input to predict resale prices. Users have to key in postal code, which will be converted to latitude and longitude, floor area sqm, remaining lease, storey, year, month and room type. The model is able to predict resale prices in the future as well due to the inclusion of year and month. However, this function tends to predict prices that are a little higher than the actual value, and it might be attributed to other factors which our model does not take into account such as economic factors and future developments in the region.
 
 ### 5. [Data Driven Insights and Conclusions](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
 
