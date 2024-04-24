@@ -77,13 +77,13 @@ Here, we then used a wide variety of machine learning models, including
 1. **Multivariate linear regression**\
 Multivariate linear regression aims to model the relationship between multiple independent variables (features) and a dependent variable (resale price) by fitting a linear equation to observed data.
 
-Predicted Price ≈ 5,900,000 
+Predicted Price ≈ 5,900,000 \
   Plus
 + 4300 * Floor Area (sqm)
 + 4200 * Remaining Lease
 + 5200 * Floor Number
 + 14000 * Room Type (numeric)
-+ 2300 * Months from Base Period (Jan 2017)
++ 2300 * Months from Base Period (Jan 2017)\
   Minus
 - 460000 * Latitude 
 - 53000 * Longitude 
@@ -112,17 +112,20 @@ We also created a function that takes in user input to predict resale prices. Us
 
 ### 5. Data Driven Insights and Conclusions
 
-**Key Factors Driving Resale Prices:**
+**Key Factors Driving Resale Prices:**\
 Floor Area & Remaining Lease: Larger floor areas and longer remaining lease durations positively impact resale prices.
 Location Proximity: Properties closer to amenities like MRT stations and shopping malls command higher prices.
 Temporal & Room Type Factors: Transactions closer to the base period and certain room configurations influence resale values.
-**Model Recommendation:**
+
+**Model Recommendation:**\
 Random Forest Regressor: Among evaluated models, the random forest regressor demonstrated superior performance, offering reliable predictions of resale prices.
 Utilization in Decision-Making: Stakeholders can leverage this model for strategic decision-making regarding property investments, sales, and acquisitions.
-**Predictive Function Usage:**
+
+**Predictive Function Usage:**\
 Potential Resale Values: Prospective buyers/sellers can utilize the predictive function to estimate potential resale values, considering factors like location, floor area, and remaining lease.
 Future Price Prediction: By inputting future dates, users can forecast resale prices, aiding in long-term planning and investment strategies.
-**Considerations and Limitations:**
+
+**Considerations and Limitations:**\
 Economic & Policy Factors: While the model provides valuable insights, it may not account for broader economic trends or policy changes impacting the housing market.
 Continuous Monitoring: Regular updates and refinement of the model are essential to ensure accuracy and relevance amidst evolving market dynamics.
 
