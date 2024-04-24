@@ -50,9 +50,9 @@ For further findings and explanations, please refer to the Jupyter Notebook on E
 
 ### 4. [Machine Learning Techniques](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
 Here, we then used a wide variety of machine learning models, including 
-1. Multivariate linear regression
-2. Random forest regressor
-3. K-nearest neighbour.
+1. **Multivariate linear regression
+2. **Random forest regressor
+3. **K-nearest neighbour.
 
 We compared different models in order to find the one most suited to model the data. The metrics that we used to compared the model was r^2 and mean squared error.
 
