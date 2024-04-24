@@ -39,13 +39,11 @@ We performed the following:
 3. **Dropping NaNs, outliers and irrelevant columns**: All the `NaN` values and irrelevant columns were dropped, outliers were kept
 4. **Creating new features:** created new variables such as `storey_midpoint`, `numeric_month`, `Distance_from_Centre (km)`, `distance_to_nearest_mrt` and `distance_to_nearest_mall`
 
-### 3. [Exploratory Data Analysis](insertlink)
-Then, we explored each of our two DataFrames further using Exploratory Data Analysis to answer questions like are there any patterns we are noticing? What do our success variables look like? What about the conventionality variables? Are there any underlying relationships between them? Can we make any inferences for our question at this stage? 
+### 3. [Exploratory Data Analysis](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
+Then, we explored our DataFrames further using Exploratory Data Analysis to answer questions like are there any patterns we are noticing? What do our variables look like?bAre there any underlying relationships between them? Can we make any inferences for our question at this stage? 
 
 To achieve this we did the following:
-1. **Explored `ConvertedComp`**: This variable is the annual compensation in USD (a.k.a Salary). Median of around $54k was seen. A lot of outliers with high salaries were present.
-2. **Explored `JobSat`:** This variable is the job satisfaction (`0-4` scale). Most frequent ratings were `2` and `4`. The mean rating was at `2.3`.
-3. **Explored Relationships Between `JobSat` and `ConvertedComp`:** Weak correlation was seen between `JobSat` and `ConvertedComp`.
-4. **Explored Variables Related to Conventionality:** Studied which options in the `6` variables were more frequently selected by respondents. 
+1. **Explored numeric variables**: elab
+2. **Explored categorical variables:** elab
 
 For further findings and explanations, please refer to the Jupyter Notebook on EDA.
