@@ -96,12 +96,12 @@ Multivariate linear regression aims to model the relationship between multiple i
 2. **Random forest regressor**\
 Random Forest grows multiple decision trees which are merged together for a more accurate prediction. It uses averaging to improve the predictive accuracy and control over-fitting.
 
-   Top 5 Feature Importances:
-   distance_from_centre_km: 22.94%
-   floor_area_sqm: 41.97%
-   numerical_month: 11.82%
-   remaininglease: 9.54%
-   numeric_room_type: 3.73%
+   Top 5 Feature Importances:\
+   `distance_from_centre_km`: 22.94%\
+   `floor_area_sqm`: 41.97%\
+   `numerical_month`: 11.82%\
+   `remaininglease`: 9.54%\
+   `numeric_room_type`: 3.73%
 
 3. **K-nearest neighbour**\
 KNN is an instance-based learning algorithm that is used for regression tasks — predicting a continuous-valued attribute associated with an object. The model then matches it to the nearest flats that we have in our data set and try to predict the resale price for the new flat.
