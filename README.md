@@ -17,8 +17,8 @@ This README briefly highlights what we have accomplished in this project. If you
 1. Problem Formulation
 2. Data Preparation and Cleaning
 3. Exploratory Data Analysis
-4. Multivariate Linear Regression
-5. Data Driven Insights?
+4. Machine Learning
+5. Data Driven Insights and Conclusion
 
 ---
 ### 1. Problem Formulation
@@ -40,6 +40,24 @@ We performed the following:
 4. **Creating new features:** created new variables such as `storey_midpoint`, `numeric_month`, `Distance_from_Centre (km)`, `distance_to_nearest_mrt` and `distance_to_nearest_mall`
 
 ### 3. [Exploratory Data Analysis](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
+Then, we explored our DataFrames further using Exploratory Data Analysis to answer questions like are there any patterns we are noticing? What do our variables look like?bAre there any underlying relationships between them? Can we make any inferences for our question at this stage? 
+
+To achieve this we did the following:
+1. **Explored numeric variables**: elab
+2. **Explored categorical variables:** elab
+
+For further findings and explanations, please refer to the Jupyter Notebook on EDA.
+
+### 4. [Exploratory Data Analysis](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
+Then, we explored our DataFrames further using Exploratory Data Analysis to answer questions like are there any patterns we are noticing? What do our variables look like?bAre there any underlying relationships between them? Can we make any inferences for our question at this stage? 
+
+To achieve this we did the following:
+1. **Explored numeric variables**: elab
+2. **Explored categorical variables:** elab
+
+For further findings and explanations, please refer to the Jupyter Notebook on EDA.
+
+### 5. [Exploratory Data Analysis](https://github.com/Stongvan/SC1015-ECDS1Team3/blob/46e4df2d399b31e9f18cf1f2fe80a6731e36f2db/2.%20Exploratory%20data%20analysis.ipynb)
 Then, we explored our DataFrames further using Exploratory Data Analysis to answer questions like are there any patterns we are noticing? What do our variables look like?bAre there any underlying relationships between them? Can we make any inferences for our question at this stage? 
 
 To achieve this we did the following:
